@@ -3,12 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    cursor: none;
 }
 
-a.navbar {
+ul li a {
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
+    color: black;
     font-size: 30px;
 }
 
@@ -29,7 +30,7 @@ ul {
     top: 50%;
     width: 100%;
     height: 50%;
-    background-color: red;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -42,14 +43,14 @@ ul {
     height: 20px;
     transform: translate(-50%, -50%);
     background-color: white;
-    mix-blend-mode: difference;
     border-radius: 50%;
     pointer-events: none;
-    transition: width 0.5s, height 0.5s;
+    transition: 0.1s;
 }
 
-.inner-cursor.grow{
-    width: 50px;
-    height: 50px;
-    transition: width 0.5s, height 0.5s;
+nav ul li:hover ~ .inner-cursor
+{
+    transform: scale(5);
+    transition: 0.1s;
+    mix-blend-mode:difference ;
 }
