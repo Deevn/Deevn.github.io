@@ -22,15 +22,19 @@ nav ul {
 
 .navbar {
     display: flex;
+    position: fixed;
     justify-content: space-between;
 }
 
 nav ul li {
     display: inline-block;
     position: relative;
+    transition-timing-function: ease-in-out;
 }
 
 nav ul li a {
+    right: calc(100% + 4rem);
+    text-align: center;
     color: white;
     display: block;
     text-decoration: none;
@@ -41,15 +45,20 @@ nav ul li a {
 }
 
 nav ul li ul.dropdown {
+    right: 0;
     width: 100%;
-    background-color: gainsboro;
     position: absolute;
-    z-index: 999;
+    top: calc(100% + .5rem);
+    z-index: 0;
     display: none;
 }
 
-nav ul li a:hover ul.dropdown {
+.navbar li:hover .dropdown{
     display: block;
+}
+
+.dropdown li:hover a{
+    background-color: gainsboro;
 }
 
 
@@ -63,14 +72,14 @@ nav ul li a:hover ul.dropdown {
     background-color: white;
     border-radius: 50%;
     pointer-events: none;
-    transition: 0.1s;
+    transition-timing-function: ease-in-out;
 }
 
 nav ul li:hover ~ .inner-cursor
 {
     transform: scale(5);
-    transition: 0.1s;
     mix-blend-mode:difference ;
+    transition: 0.1s;
 }
 
 .logobiggie{
