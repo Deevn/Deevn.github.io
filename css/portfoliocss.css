@@ -127,4 +127,81 @@ nav ul li:hover ~ .inner-cursor
     align-items: top;
     justify-content: left;
     padding: 15px;
+    padding-bottom: 200px;
+}
+
+.individual_projects{
+    width: 635px;
+    height: 665px;
+    display: inline-block;
+    text-align: center;
+}
+
+.Project1{
+    width: 635px;
+    height: 635px;
+    display: inline-block;
+    background: url(../projects/ON3still.png) no-repeat;
+}
+.individual_projects :hover .Project1{
+    background: url(../projects/ON3animated.gif) no-repeat;
+}
+
+.Project2{
+    width: 635px;
+    height: 635px;
+    display: inline-block;
+    background: url(../projects/OV3still.png) no-repeat;
+}
+.individual_projects :hover .Project2{
+    background: url(../projects/OV3animated.gif) no-repeat;
+}
+
+.Project3{
+    width: 635px;
+    height: 635px;
+    display: inline-block;
+    background: url(../projects/TE5still.png) no-repeat;
+}
+
+.Project4{
+    width: 635px;
+    height: 635px;
+    display: inline-block;
+    background: url(../projects/ON5still.png) no-repeat;
+}
+
+.Project5{
+    width: 635px;
+    height: 635px;
+    display: inline-block;
+    background: url(../projects/ON4still.png) no-repeat;
+}
+
+.Project6{
+    width: 635px;
+    height: 635px;
+    display: inline-block;
+    background: url(../projects/ON2still.png) no-repeat;
+}
+
+.Project7{
+    width: 635px;
+    height: 635px;
+    display: inline-block;
+    background: url(../projects/GR4still.png) no-repeat;
+}
+
+.Project8{
+    width: 635px;
+    height: 635px;
+    display: inline-block;
+    background: url(../projects/ISUUstill.png) no-repeat;
+}
+
+.text_underneath_project{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding: 0;
+    width: 635px;
 }
