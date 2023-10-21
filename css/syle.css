@@ -57,10 +57,35 @@ nav ul li ul.dropdown {
     display: block;
 }
 
+
+
 .dropdown li:hover a{
-    background-color: gainsboro;
+    color: rgb(0, 255, 229);
 }
 
+input, ul.dropdown {
+    display: none;
+  }
+
+  label {
+    right: calc(100% + 4rem);
+    text-align: center;
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 60px;
+  }
+
+  input:checked~ul.dropdown {
+    display: block;
+  }
+
+.nav-dropdown{
+    font-size: 15px;
+}
 
 
 .inner-cursor{
@@ -132,4 +157,3 @@ nav ul li:hover ~ .inner-cursor
     color:rgb(77, 75, 75);
     padding-bottom: 30px;
 }
-
